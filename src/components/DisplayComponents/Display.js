@@ -3,7 +3,7 @@ import Numbers from "../ButtonComponents/NumberButtons/Numbers";
 const Display = (props) => {
   return (
   <div className="display">{/* Display any props data here */}
-    
+    0
     
   </div>
 )};

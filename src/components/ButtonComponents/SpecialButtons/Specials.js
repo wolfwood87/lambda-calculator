@@ -8,14 +8,23 @@ import { specials } from '../../../data.js';
 const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [specState, setSpecState] = useState(specials);
+  const contStyle = {
+    paddingTop: '2.5%',
+    display: 'flex',
+    flexDirection: 'row',
+    width: '65%',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    height: '90px',
+  };
   const style = {
     borderRadius: '50%',
     color: 'blue',
-    width: '50px',
-    height: '50px'
+    width: '90px',
+    height: '90px'
   };
   return (
-    <div>
+    <div style={contStyle}>
       {console.log(specials)}
       {specState.map((item, index) => (
       <SpecialButton style={style} buttonData={item} key = {index} />

@@ -9,14 +9,22 @@ const Operators = (props) => {
   // STEP 2 - add the imported data to state
   const [opState, setOpState] = useState(operators);
 
+  const contStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '25%',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    height: '525px',
+  };
   const style = {
     borderRadius: '50%',
-    color: 'blue',
-    width: '50px',
-    height: '50px'
+    backgroundColor: 'lightblue',
+    width: '90px',
+    height: '90px'
   };
   return (
-    <div>
+    <div style={contStyle}>
       {opState.map((object, index) => (
         <OperatorButton style={style} buttonData={object} key = {index} />
       ))}

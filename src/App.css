@@ -7,9 +7,10 @@
     padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-left: 5%;
     height: 100px;
-    width: 450px;
+    width: 80%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -20,11 +21,3 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
-
-  /* .op-button {
-      border-radius: 50%;
-  }
-
-  .num-button {
-
-  } */

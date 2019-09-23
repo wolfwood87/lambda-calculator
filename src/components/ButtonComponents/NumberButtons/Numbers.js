@@ -14,16 +14,33 @@ import { numbers } from '../../../data'
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
   
+  const zeroStyle = {
+    width: '215px',
+    borderRadius: '60px',
+    backgroundColor: 'blue',
+    color: 'white',
+    height: '90px'
+  }
+  const contStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '65%',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '425px',
+  }
   const style = {
     borderRadius: '50%',
-    color: 'blue',
-    width: '50px',
-    height: '50px'
+    backgroundColor: 'blue',
+    color: 'white',
+    width: '90px',
+    height: '90px'
   };
   return (
-    <div>
+    <div style= {contStyle}>
     {numberState.map((item, index) => (
-      <NumberButton style={style} buttonData={item} key = {index} />
+      <NumberButton style={index == '9' ? zeroStyle : style} buttonData={item} key = {index} />
     ))}
     </div>
       /* STEP 3 - Use .map() to iterate over your array data and return a button
