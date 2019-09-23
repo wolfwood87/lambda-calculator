@@ -21,7 +21,6 @@ function App() {
       <div className="App">
         <Display />
         <Numbers />
-        
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>

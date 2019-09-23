@@ -18,9 +18,8 @@ import { numbers } from '../../../data'
   return (
     <div>
     {numberState.map((item, index) => (
-      <NumberButton className="numberButton" buttonData={item} number = {index} />
-    )),
-      console.log(numbers)}
+      <NumberButton className="numberButton" buttonData={item} key = {index} />
+    ))}
     </div>
       /* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
