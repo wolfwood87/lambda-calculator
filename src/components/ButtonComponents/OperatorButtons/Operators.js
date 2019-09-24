@@ -15,13 +15,18 @@ const Operators = (props) => {
     width: '25%',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
-    height: '525px',
+    marginTop: '2%',
+    height: '535px',
   };
   const style = {
     borderRadius: '50%',
-    backgroundColor: 'lightblue',
+    backgroundColor: '#01748C',
+    color: 'white',
     width: '90px',
-    height: '90px'
+    fontSize: '2em',
+    height: '90px',
+    border: '1px solid #3B2446',
+    boxShadow: '0px 4px 1px 	#3B2446'
   };
   return (
     <div style={contStyle}>

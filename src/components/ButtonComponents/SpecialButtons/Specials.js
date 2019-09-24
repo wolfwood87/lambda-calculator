@@ -9,7 +9,7 @@ const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [specState, setSpecState] = useState(specials);
   const contStyle = {
-    paddingTop: '2.5%',
+    marginTop: '4.25%',
     display: 'flex',
     flexDirection: 'row',
     width: '65%',
@@ -19,9 +19,13 @@ const Specials = (props) => {
   };
   const style = {
     borderRadius: '50%',
-    color: 'blue',
+    backgroundColor: '#045F9F',
+    color: 'white',
     width: '90px',
-    height: '90px'
+    height: '90px',
+    fontSize: '2em',
+    border: '1px solid 	#3B2446',
+    boxShadow: '0px 4px 1px 	#3B2446'
   };
   return (
     <div style={contStyle}>

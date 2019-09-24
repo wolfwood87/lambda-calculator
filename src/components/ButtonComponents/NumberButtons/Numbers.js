@@ -17,9 +17,12 @@ import { numbers } from '../../../data'
   const zeroStyle = {
     width: '215px',
     borderRadius: '60px',
-    backgroundColor: 'blue',
+    backgroundColor: '#0F3F7E',
     color: 'white',
-    height: '90px'
+    fontSize: '2em',
+    height: '90px',
+    border: '1px solid #3B2446',
+    boxShadow: '0px 4px 1px 	#3B2446'
   }
   const contStyle = {
     display: 'flex',
@@ -28,14 +31,18 @@ import { numbers } from '../../../data'
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: '425px',
+    height: '420px',
+    paddingTop: '.5%',
   }
   const style = {
     borderRadius: '50%',
-    backgroundColor: 'blue',
+    backgroundColor: '#0F3F7E',
+    fontSize: '2em',
     color: 'white',
     width: '90px',
-    height: '90px'
+    height: '90px',
+    border: '1px solid #3B2446',
+    boxShadow: '0px 4px 1px 	#3B2446'
   };
   return (
     <div style= {contStyle}>
